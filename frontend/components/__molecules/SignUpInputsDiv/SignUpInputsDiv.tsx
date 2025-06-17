@@ -22,7 +22,7 @@ function SignUpInputsDiv() {
   });
   const onSubmit = async (data: SignUpData) => {
     try {
-      await axios.post(`${process.env.NEXT_PIBLIC_SERVER_URL}/auth/sign-up`, {
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/sign-up`, {
         fullName: data.name,
         email: data.email,
         password: data.password,
